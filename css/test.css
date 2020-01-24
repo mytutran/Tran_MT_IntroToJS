@@ -1,0 +1,17 @@
+body {
+  font-size: 14px;
+  padding: 1em;
+}
+
+main span {
+  cursor: pointer;
+}
+
+.selected {
+  color: green;
+  padding-left: 0.5em;
+}
+
+.selected:before{
+  content: ' \2713';
+}

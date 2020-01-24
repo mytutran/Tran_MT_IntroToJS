@@ -12,6 +12,27 @@ main span {
   padding-left: 0.5em;
 }
 
-.selected:before{
+.selected:not(.wrapper):before{
   content: ' \2713';
+}
+
+object {
+  width: 12em;
+}
+
+.wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.wrapper.selected:after {
+  content: ' \2713';
+  font-size: 6em;
+  position: absolute;
+  top: -5px;
+  right: -3px;
+}
+
+.wrapper > * {
+  pointer-events: none;
 }
